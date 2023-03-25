@@ -1,6 +1,6 @@
-import {ADD_TO_CART, REMOVE_FROM_CART} from './constant'
+import {ADD_TO_CART} from './constant'
 
-export const cartData = (data = [0], action) => {
+export const cartData = (data = [], action) => {
     // if(action.type === ADD_TO_CART){
     //     console.log("reducer called", action)
     //     return action.data
@@ -12,12 +12,10 @@ export const cartData = (data = [0], action) => {
     switch(action.type){
         case ADD_TO_CART:
             console.log("reducer called", action)
-            return 1+1;
+            return [action.data, ...data];
 
-        case REMOVE_FROM_CART:
-            console.log("reducer called", action)
-            return 1+1;
+        
         default:
-            return "no case matched"
+            return data;
     }
 }
