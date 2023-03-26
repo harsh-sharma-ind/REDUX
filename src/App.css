@@ -33,6 +33,24 @@
 
 /* end header style */
 
+/* product UI style */
+.product-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-item{
+border: 1px solid #ccc;
+padding: 20px;
+  margin: 20px;
+}
+
+.product-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+/* end product Ui style */
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
