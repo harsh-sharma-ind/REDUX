@@ -1,4 +1,4 @@
-import {useSelector} from 'react-redux'
+import {useSelector} from 'react-redux' // to bring data from store to components
 
 const Header =()=>{
     const result = useSelector((state)=>state.cartData);
